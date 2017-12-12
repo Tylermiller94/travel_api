@@ -14,6 +14,11 @@ class Seed
       )
 
       10.times do
+        destination.reviews.create!(
+        author: Faker::HarryPotter.character,
+        content: Faker::HarryPotter.quote,
+        rating: Faker::Number.between(1,5)
+        )
       end
     end
   end
