@@ -3,7 +3,15 @@ module Api
     class DestinationsController < ApplicationController
 
       def index
-        @destinations = Destination.all
+        city = params[:city]
+        country = params[:country]
+        if city
+          @destinations = Destination.city_search(city)
+        elsif country
+          @destinations = Destination.country_search(country)
+        else
+          @destinations = Destination.all
+        end
         json_response(@destinations)
       end
 
