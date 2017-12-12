@@ -13,8 +13,8 @@ FactoryBot.define do
   factory :review do
     author 'Mark'
     content 'Seattle is okay...'
-    association :destination
-    association :user
+    destination
+    user
     rating 3
   end
 end

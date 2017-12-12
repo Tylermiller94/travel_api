@@ -3,7 +3,7 @@ require 'rails_helper'
 describe 'get destinations reviews route', :type => :request do
   let!(:destination) {FactoryBot.create(:destination) }
   let!(:user) {FactoryBot.create(:user)}
-  let!(:message) {FactoryBot.create_list(:review, 20, destination: destination, user_id: user.id)}
+  let!(:review) {FactoryBot.create_list(:review, 20, destination: destination, user_id: user.id)}
 
   before { get "/api/v1/destinations/#{destination.id}/reviews" }
 

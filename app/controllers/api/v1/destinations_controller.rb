@@ -21,7 +21,7 @@ module Api
         @destination = Destination.find(params[:id])
         if @destination.update!(destination_params)
           render status: 200, json: {
-            message: "Your destination has been updated successfilly."
+            message: "Your destination has been updated successfully."
           }
         end
       end
