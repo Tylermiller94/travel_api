@@ -1,24 +1,8 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Application successfully returns responses for each API call.
+Application handles exceptions.
+Application includes custom routes and model scopes.
+All routes are tested with request specs.
+README thoroughly describes all endpoints along with parameters that can be used.
+Application works as expected.
+Project is in a presentable, portfolio-quality state.
+Project demonstrates understanding of all concepts covered this week. If prompted, you can discuss your application with an instructor using the correct terminology.
